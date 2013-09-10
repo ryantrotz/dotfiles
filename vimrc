@@ -1,10 +1,24 @@
-"" Logical Starting Points
+" START VUNDLE
 set nocompatible                " choose no compatibility with legacy vi
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" My Bundles
+Bundle 'tpope/vim-surround'
+" END VUNDLE
+
+"" Logical Starting Points
+filetype plugin indent on       " load file type plugins + indentation
 set encoding=utf-8
 set number
 set showcmd                     " display incomplete commands
-filetype plugin indent on       " load file type plugins + indentation
-"set clipboard=unnamed          " use the system clipboard on mac
+
 
 " Setting our Color Schemes
 syntax on
@@ -37,3 +51,6 @@ endfor
 set relativenumber
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
+
+" Misc
+set listchars=tab:▸\ ,eol:¬
