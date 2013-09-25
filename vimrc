@@ -11,6 +11,7 @@ Bundle 'gmarik/vundle'
 
 " My Bundles
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-fugitive'
 " END VUNDLE
 
 "" Logical Starting Points
