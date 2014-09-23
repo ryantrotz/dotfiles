@@ -1,0 +1,4 @@
+*.swp
+php.tags
+Vagrantfile
+.vagrant/

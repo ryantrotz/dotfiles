@@ -2,16 +2,18 @@
 set nocompatible                " choose no compatibility with legacy vi
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " My Bundles
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
+Plugin 'gregsexton/gitv'
+call vundle#end()
 " END VUNDLE
 
 "" Logical Starting Points
@@ -23,7 +25,7 @@ set showcmd                     " display incomplete commands
 
 " Setting our Color Schemes
 syntax on
-let g:solarized_termcolors=256  " Only Required for Solarized
+""let g:solarized_termcolors=256  " Only Required for Solarized
 set background=dark
 colorscheme solarized
 
@@ -55,3 +57,4 @@ autocmd InsertLeave * :set relativenumber
 
 " Misc
 set listchars=tab:▸\ ,eol:¬
+set list
